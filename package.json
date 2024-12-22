@@ -1,0 +1,17 @@
+{
+  "name": "bookstack-pdf-latex",
+  "version": "1.0.0",
+  "description": "A BookStack PDF rendering pipeline with LaTeX support",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milan Špinka",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^23.11.1"
+  }
+}
