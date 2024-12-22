@@ -12,7 +12,12 @@ const process = require('process');
         process.exit(1);
     }
 
-    const browser = await puppeteer.launch();
+    const pupConfig = {headless: true};
+    if (process.env.PUPPETEER_NO_SANDBOX) {
+        pupConfig.args = ['--no-sandbox', '--disable-setuid-sandbox'];
+    }
+
+    const browser = await puppeteer.launch(pupConfig);
     const page = await browser.newPage();
 
     const htmlFilePath = path.resolve(inputPath);
