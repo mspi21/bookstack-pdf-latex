@@ -6,7 +6,7 @@ A BookStack PDF rendering pipeline with LaTeX support.
 
 - bash
 - a reasonably recent version of nodejs (>= 18 should be fine?)
-- chromium browser (or its dependencies, for some reason puppeteer does not install them)
+- chrome library dependencies - see https://pptr.dev/troubleshooting#chrome-doesnt-launch-on-linux
 
 ## Quick Start.
 
